@@ -1,5 +1,8 @@
-const pup = require("puppeteer");
-let {id,pass} = require("./secret");
+const puppeteer = require("puppeteer");
+require("dotenv").config();
+
+const id = process.env.INTERNSHALA_ID;
+const pass = process.env.INTERNSHALA_PASSWORD;
 let tab;
 let dataFile = require("./data");
 
